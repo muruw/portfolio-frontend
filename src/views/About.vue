@@ -49,6 +49,11 @@
           <h1>{{item.name}}</h1>
           <h2 class="animate-text">{{item.stack}}</h2>
           <p class="animate-text">{{item.description}}</p>
+          <div class="dots" @click="openWebsite(item.link)">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </div>  
     </div>
@@ -87,7 +92,9 @@ export default {
   },
 
   created(){
-    this.refreshProjects();
+    /*this.refreshProjects();
+      this will be added once the back end has been deployed    
+    */
   }
 
 }
@@ -148,7 +155,7 @@ table
 
 .project-tile
   max-width: 350px;
-  height: 350px;
+  height: 400px;
   margin: 30px;
   background-color: #F65C5C;
   display: inline-block
@@ -189,9 +196,32 @@ table
     .animate-text
       transform: translateX(0)
       opacity: 1
+    .dots
+      transform: translateY(-50px)
+      span
+        opacity: 1
+  .dots
+    position: absolute
+    bottom: 20px
+    right: 30px
+    margin: 0 auto
+    width: 30px
+    height: 30px
+    color: currentColor
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-around
     span
-      opacity: 1
-      transform: translateY(0)
+      width: 5px
+      height: 5px
+      background-color: currentColor
+      border-radius: 50%
+      display: block
+      opacity: 0
+      transition: transform 0.4s ease-out, opacity 0.5 ease
+      transform: translateY(50px)  
+  
 @media screen and (max-width: 1096px)
   .project-gallery-wrap
     flex-direction: column

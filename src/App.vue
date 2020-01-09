@@ -23,7 +23,7 @@ export default {
   data : () => {
     return{
       projects: [new Project("141443f8-722e-41a0-83c8-e81ae2cd2498", "Portfolio website front end", "Vue.js, SaSS",
-                "This project has been developed during my spare time with a goal to give others an overview of my skills and how I spend my free time", "http://muruw.com"),
+                "This project has been developed during my spare time with a goal to give others an overview of my skills and how I spend my free time", "https://github.com/muruw/portfolio-frontend"),
                 new Project("883d09a1-1090-45b6-a45a-67c11193477d", "Java online chat application", "Java, JavaFX, JDBC, H2 Database",
                 "Full stack Application where users can create accounts and chat with other users all over the world. The server is created from scratch with Java. GUI is created with JavaFX. The project was done in collaboration with Karlipoiss and KristerL (@github)", "https://github.com/muruw/online-chat-api"),
                 new Project("a9bc17d4-bd41-4f8b-9197-9a757bc8371d", "Portfolio website back end", "Spring Boot, PostgreSQL, Docker",
@@ -37,7 +37,6 @@ export default {
   }
 }
 </script>
-http://192.168.1.126:5000/
 <style lang="sass" scoped>
   .view-container
     width: 79vw
