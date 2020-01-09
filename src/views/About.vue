@@ -39,7 +39,7 @@
       <p>
         I like to use some of my free time exploring various topics related to computer science.
         My main interests are creating full stack applications, attending hackathons and developing games in Unity3D.
-        I have tried to reflect my intrests in my projects and they can be found below.
+        I have tried to reflect my intrests in my projects and these can be found below.
       </p>
     </div>
     <div class="project-gallery-wrap">
@@ -226,6 +226,8 @@ table
   .project-gallery-wrap
     flex-direction: column
     align-items: center
+  .project-tile
+    height: 450px
 
 
 </style>
